@@ -2,28 +2,35 @@
 <html>
     <head>
         <style>
-            /* Seletor universal */
-            /* * {
-                background: red;
-                color: white;
-            } */
-
-            /* Seletor de elemento */
-            li {
-                background: yellow;
-                color: black;
-            }
-
-            /* Seletor de classe */
-            .cor{
+            li,span {
                 background: green;
             }
 
-            /* Seletor de ID */
-            #paragrafo-principal {
-                background: blue;
+
+            .vermelho-bg {
+                background: red;
+            }
+
+            .branco-tx {
                 color: white;
             }
+
+            div li {
+                background: yellow;
+            }
+
+            div li.roxo {
+                background: purple;
+            }
+
+            .titulo {
+                font-size: 1.2em;
+            }
+
+            .cor-fundo {
+                background-color: pink;
+            }
+
 
         </style>
     </head>
@@ -32,9 +39,11 @@
         <div>Este é o conteúdo de um elemento div.</div>
         <div>E temos aqui outro elemento div.</div>
         <span class="cor">Este é um texto dentro de um elemento span.</span>
+        <br>
+        <span class="vermelho-bg branco-tx">Este é um texto dentro de um elemento span.</span>
 
         <div>
-            <p id="paragrafo-principal">Parágrafo principal</p>
+            <p class="titulo cor-fundo">Título</p>
         </div>
 
         <div>
@@ -42,10 +51,18 @@
                 <li>Primeiro elemento de uma lista</li>
                 <li>Segundo elemento de uma lista</li>
                 <li>Terceiro elemento de uma lista</li>
-                <li>Quarto elemento de uma lista</li>
+                <li class="roxo">Quarto elemento de uma lista</li>
                 <li>Quinto elemento de uma lista</li>
             </ul>
         </div>
+
+        <ul>
+            <li>Primeiro elemento de uma lista</li>
+            <li>Segundo elemento de uma lista</li>
+            <li class="roxo">Terceiro elemento de uma lista</li>
+            <li>Quarto elemento de uma lista</li>
+            <li>Quinto elemento de uma lista</li>
+        </ul>
         
         <p>Fim do exercício sobre seletores.</p>
 
